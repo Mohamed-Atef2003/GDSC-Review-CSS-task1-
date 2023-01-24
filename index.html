@@ -7,24 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>task</title>
     <link rel="shortcut icon" href="./image/photo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
     <header>
-        <h1>the code magazine</h1>
-        <nav>
-            <a href="./index.html">Blog</a>
-            <a href="./index.html">Challenges</a>
-            <a href="./index.html">Flexbox</a>
-            <a href="./index.html">CSS Grid</a>
+        <h1 class="h1">the code magazine</h1>
+        <nav class="nav">
+            <a class="link" href="./index.html">blog</a>
+            <a class="link" href="./index.html">challenges</a>
+            <a class="link" href="./index.html">flexbox</a>
+            <a class="link" href="./index.html">css grid</a>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="section-1">
             <h2>The Basic Language of the Web: HTML</h2>
             <img src="./image/photo.png" alt="photo" width="40px" height="30px" />
             <p>Posted by Laura Jones on Monday, June 21st 2027</p>
-            <img src="./image/photo.png" alt="photo" />
+            <img  src="./image/photo.png" alt="photo" />
             <p>
                 All modern websites and web applications are built using three
                 fundamental technologies: HTML, CSS and JavaScript. These are the
@@ -35,7 +36,7 @@
                 about, and why you too should learn it.
             </p>
         </section>
-        <section>
+        <section class="section-2">
             <h2>What is HTML?</h2>
             <p>
                 HTML stands for <b>H</b>yperText <b>M</b>arkup <b>L</b>anguage. It's a
@@ -55,7 +56,7 @@
             </ol>
             <p>You can learn more at <a href="./index.html">mnd</a></p>
         </section>
-        <section>
+        <section class="section-3">
             <h2>Why should you learn HTML?</h2>
             <p>
                 There are countless reasons for learning the fundamental language of
@@ -73,7 +74,7 @@
             </ul>
             <p>Hopefully you learned something new here. See you next time!</p>
             <b>related posts</b>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./image/photo.png" alt="photo" width="60px" height="50px" />
                     <a href="./index.html">How to Learn Web Development</a>
@@ -102,24 +103,28 @@
                     <br />
                 </li>
             </ul>
-            <form>
-                <label for="name"><mark>name</mark></label>
-                <input type="text" name="name" placeholder="enter your name" required />
-                <label for="code"><mark>code</mark></label>
-                <input type="number" name="code" placeholder="enter your code" required />
-                <select id="cars" name="cars" required>
+            <form class="form">
+                <label class="name" for="name"><span>name : </span></label>
+                <input class="name" type="text" name="name" placeholder="enter your name" required />
+                <br>
+                <br>
+                <label class="code" for="code"><span>code : </span></label>
+                <input class="code" type="number" name="code" placeholder="enter your code" required />
+                <br>
+                <br>
+                <select class="year" id="year" name="year" required>
                     <option value="year1">year1</option>
                     <option value="year2">year2</option>
                     <option value="year3">year3</option>
                     <option value="year4">year4</option>
                 </select>
-                <input type="submit" value="END" />
-            </form>
-            <br />
-            <hr />
+                <input class="end" type="submit" value="END" />
+            </form>          
         </section>
     </main>
-    <footer>Copyright &copy; 2027 by the Magazine.</footer>
+    <footer>
+        <p>Copyright &copy; 2027 by the Magazine.</p>
+    </footer>
 </body>
 
 </html>
